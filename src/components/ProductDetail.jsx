@@ -23,6 +23,7 @@ const ProductDetail = () => {
       fetchProductDetails();
     }
 
+    // Cleanup - when component unmounts it runs
     return () => {
       dispatch(removeSelectedProduct())
     }
